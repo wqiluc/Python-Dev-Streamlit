@@ -1,6 +1,6 @@
 <h1 align="center">
-  <span style="color:#FFD43B;">Jornada Python (Hashtag Treinamentos) — Projeto Chatbot</span> <br>
-  <span style="color:#306998;">Projeto Python IA: <br> 
+  <span style="color:#FFD43B;">Jornada Python (Hashtag Treinamentos) — Projeto 4</span> <br>
+  <span style="color:#306998;">Python and IA: <br> 
   Chatbot Inteligente com Streamlit + OpenAI</span> <br>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="36" style="vertical-align:middle;"/>🤖🐍
 </h1>
