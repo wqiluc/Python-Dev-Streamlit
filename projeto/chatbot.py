@@ -24,7 +24,7 @@ texto_usuario = st.chat_input("Digite algo: 🤖🐍")
 arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁")
 
 # MOSTRA TODO O HISTÓRICO NA TELA (isso que mantém as mensagens acumuladas)
-for msg in st.session_state["lista_mensagens_histórico"]:
+for msg in (st.session_state["lista_mensagens_histórico"]):
     role = msg["role"]
     content = msg["content"]
     st.chat_message(role).write(content)
@@ -37,20 +37,18 @@ if (texto_usuario):
 
     mensagem_usuario = {
         "role": "user",
-        "content": texto_usuario
-    }
+        "content": texto_usuario}
     st.session_state["lista_mensagens_histórico"].append(mensagem_usuario)
 
-    # Modelos de icon:
-    # nome do usuário; (primeira letra)
-    # 'user'; (primeira letra salva no navegador do usuário)
-    # 'assistant' (icon de um robôzinho 🤖)
+    # Modelos de icon📸:
+        # nome do usuário; (primeira letra) (🅰🅱️...)
+        # 'user'; (primeira letra salva no navegador do usuário)
+        # 'assistant' (icon de um robôzinho 🤖)
 
     # IA respondendo:
     resposta_ia = modelo_ia.chat.completions.create(
         messages= st.session_state["lista_mensagens_histórico"],
-        model = "gpt-4o"
-    )
+        model = "gpt-4o")
     print(resposta_ia.choices[0].message.content)
 
     texto_resposta_ia = resposta_ia.choices[0].message.content
@@ -58,8 +56,7 @@ if (texto_usuario):
 
     mensagem_IA = {
         "role": "assistant",
-        "content": resposta_ia
-    }
+        "content": resposta_ia}
     st.session_state["lista_mensagens_histórico"].append(mensagem_IA)
 else:
     pass
