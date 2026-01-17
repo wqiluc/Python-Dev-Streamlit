@@ -12,7 +12,7 @@
 <p align="center">
 Aplicação real em Python para criação de um <strong>Chatbot com Inteligência Artificial</strong>,
 utilizando <strong>Streamlit</strong> para interface e <strong>OpenAI</strong> para processamento das respostas. <br>
-🐍🤖💬  
+🤖💬  
 <br><br>
 <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=black" width="75"/>
 <img src="https://img.shields.io/badge/-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" width="95"/>
