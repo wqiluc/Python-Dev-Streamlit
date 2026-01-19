@@ -64,6 +64,7 @@ utilizando <strong>Streamlit</strong> para interface e <strong>OpenAI</strong> p
 <pre>
 Python Dev Starlit/
 │
+├── .gitignore<img src="https://skillicons.dev/icons?i=git" width="15"/>
 ├── license (MIT) 📜
 ├── readme.md <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg" width="18" style="filter: brightness(0) invert(1);"/>
 │
