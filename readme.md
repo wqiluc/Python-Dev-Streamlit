@@ -106,7 +106,7 @@ a API da OpenAI para gerar respostas automatizadas, simulando uma conversa natur
 
 ```python
 pip install streamlit
-streamlit run chatbot.py
+streamlit run projeto/chatbot.py
 ```
 
 

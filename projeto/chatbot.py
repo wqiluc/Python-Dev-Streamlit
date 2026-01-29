@@ -20,11 +20,11 @@ if "lista_mensagens_histórico" not in (st.session_state):
 else:
     pass
 
-texto_usuario = st.chat_input("Digite algo: 🤖🐍".capitalize())
-arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁".capitalize())
+texto_usuario = st.chat_input("Digite algo: 🤖🐍")
+arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁")
 
 # MOSTRA TODO O HISTÓRICO NA TELA (isso que mantém as mensagens acumuladas)
-for msg in (st.session_state["lista_mensagens_histórico".capitalize()]):
+for msg in (st.session_state["lista_mensagens_histórico"]):
     role = msg["role"]
     content = msg["content"]
     st.chat_message(role).write(content)
@@ -33,7 +33,7 @@ if (texto_usuario):
     print(f"\n {texto_usuario}")
 
     # Mostra mensagem do usuário na tela
-    st.chat_message("user").write(texto_usuario.capitalize())
+    st.chat_message("user").write(texto_usuario)
 
     mensagem_usuario = {
         "role": "user",
@@ -53,7 +53,7 @@ if (texto_usuario):
     print(resposta_ia.choices[0].message.content)
 
     texto_resposta_ia = resposta_ia.choices[0].message.content
-    st.chat_message("assistant").write(texto_resposta_ia.capitalize())
+    st.chat_message("assistant").write(texto_resposta_ia)
 
     mensagem_IA = {
         "role": "assistant",
