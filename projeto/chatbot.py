@@ -15,16 +15,16 @@ modelo_ia = IA(api_key="SUA CHAVE AQUI")
 
 st.write("CHATBOT COM IA (PYTHON + STREAMLIT 🤖🐍)")
 
-if "lista_mensagens_histórico" not in st.session_state:
+if "lista_mensagens_histórico" not in (st.session_state):
     st.session_state["lista_mensagens_histórico"] = [{"role": "system", "content": " "}]
 else:
     pass
 
-texto_usuario = st.chat_input("Digite algo: 🤖🐍")
-arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁")
+texto_usuario = st.chat_input("Digite algo: 🤖🐍".capitalize())
+arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁".capitalize())
 
 # MOSTRA TODO O HISTÓRICO NA TELA (isso que mantém as mensagens acumuladas)
-for msg in (st.session_state["lista_mensagens_histórico"]):
+for msg in (st.session_state["lista_mensagens_histórico".capitalize()]):
     role = msg["role"]
     content = msg["content"]
     st.chat_message(role).write(content)
@@ -33,11 +33,12 @@ if (texto_usuario):
     print(f"\n {texto_usuario}")
 
     # Mostra mensagem do usuário na tela
-    st.chat_message("user").write(texto_usuario)
+    st.chat_message("user").write(texto_usuario.capitalize())
 
     mensagem_usuario = {
         "role": "user",
         "content": texto_usuario}
+    
     st.session_state["lista_mensagens_histórico"].append(mensagem_usuario)
 
     # Modelos de icon📸:
@@ -52,11 +53,12 @@ if (texto_usuario):
     print(resposta_ia.choices[0].message.content)
 
     texto_resposta_ia = resposta_ia.choices[0].message.content
-    st.chat_message("assistant").write(texto_resposta_ia)
+    st.chat_message("assistant").write(texto_resposta_ia.capitalize())
 
     mensagem_IA = {
         "role": "assistant",
         "content": resposta_ia}
+    
     st.session_state["lista_mensagens_histórico"].append(mensagem_IA)
 else:
     pass

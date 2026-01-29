@@ -102,6 +102,15 @@ a API da OpenAI para gerar respostas automatizadas, simulando uma conversa natur
 
 <h2 align="center">🤖 Projeto: Chatbot com IA (Python + Streamlit): </h2>
 
+### 🤖 Como rodar
+
+```python
+pip install streamlit
+streamlit run chatbot.py
+```
+
+
+
 ### 📌 Descrição do Projeto
 
 Este projeto implementa um **Chatbot Inteligente** utilizando:
