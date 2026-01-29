@@ -24,10 +24,9 @@ texto_usuario = st.chat_input("Digite algo: 🤖🐍")
 arquivo_envio = st.file_uploader("Anexe abaixo seu arquivo: 👇📁")
 
 # MOSTRA TODO O HISTÓRICO NA TELA (isso que mantém as mensagens acumuladas)
-for msg in (st.session_state["lista_mensagens_histórico"]):
-    role = msg["role"]
-    content = msg["content"]
-    st.chat_message(role).write(content)
+for msg in st.session_state["lista_mensagens_histórico"]:
+    if msg["role"] != ("system"):
+        st.chat_message(msg["role"]).write(msg["content"])
 
 if (texto_usuario):
     print(f"\n {texto_usuario}")
