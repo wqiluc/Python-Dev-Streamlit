@@ -32,7 +32,7 @@ utilizando <strong>Streamlit</strong> para interface e <strong>OpenAI</strong> p
   <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" height="32">
 </a>
 <a href="https://www.linkedin.com/in/lucas-paguetti-pereira-70267339b/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="32">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="32"> <br>
 </a>
  <img src="https://img.shields.io/badge/Contact%20Me-lpp2%40cesar.school-FFA500?style=for-the-badge&logo=gmail&logoColor=orange"><br>
 </a>
